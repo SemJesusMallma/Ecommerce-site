@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/app.css">
+    <script src="build/js/app.js"></script>
+    <title>ATENAHS</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <h1 class="header__title">ATENAHS</h1>
+        </a>
+    </header>
+    
+    <nav class="navigation navigation__product">
+        <a class="navigation__link navigation__link--active" href="index.html">Inicio</a>
+        <a class="navigation__link" href="productos.html">Productos</a>
+        <a class="navigation__link" href="#">Contacto</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero__content">
+            <h2 class="hero__title">Bienvenido a nuestra tienda de ropa <span class="hero__span">Freelancer</span> </h2>
+            <p class="hero__text">¡Encuentra tu look perfecto entre nuestras opciones únicas!</p>
+        </div>
+    </section>
+
+    <main class="container shadow">
+        <h2>Nuestros Productos</h2>
+        <div class="grid">
+            <div class="product">
+                <a href="product.html?id=1">
+                    <picture>
+                        <source class="product__image" srcset="build/img/poloN.avif" type="image/avif">
+                        <source class="product__image" srcset="build/img/poloN.webp" type="image/webp">
+                        <img class="product__image" loading="lazy" src="build/img/poloN.jpg" alt="Black Polo for Men">
+                    </picture>
+                    <div class="product__information">
+                        <p class="product__name">Polo Negro Hombre</p>
+                        <p class="product__price">S/24</p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html?id=2">
+                    <picture>
+                        <source class="product__image" srcset="build/img/poloB.avif" type="image/avif">
+                        <source class="product__image" srcset="build/img/poloB.webp" type="image/webp">
+                        <img class="product__image" loading="lazy" src="build/img/poloB.jpg" alt="White Polo for Men">
+                    </picture>
+                    <div class="product__information">
+                        <p class="product__name">Polo Blanco Hombre</p>
+                        <p class="product__price">S/24</p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html?id=3">
+                    <picture>
+                        <source class="product__image" srcset="build/img/poloV.avif" type="image/avif">
+                        <source class="product__image" srcset="build/img/poloV.webp" type="image/webp">
+                        <img class="product__image" loading="lazy" src="build/img/poloV.jpg" alt="Wine Polo for Men">
+                    </picture>
+                    <div class="product__information">
+                        <p class="product__name">Polo Vino Hombre</p>
+                        <p class="product__price">S/24</p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html?id=6">
+                    <picture>
+                        <source class="product__image" srcset="build/img/poloMR.avif" type="image/avif">
+                        <source class="product__image" srcset="build/img/poloMR.webp" type="image/webp">
+                        <img class="product__image" loading="lazy" src="build/img/poloMR.jpg" alt="Pink Polo for Women">
+                    </picture>
+                    <div class="product__information">
+                        <p class="product__name">Polo Rosa Mujer</p>
+                        <p class="product__price">S/27</p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html?id=7">
+                    <picture>
+                        <source class="product__image" srcset="build/img/poloMN.avif" type="image/avif">
+                        <source class="product__image" srcset="build/img/poloMN.webp" type="image/webp">
+                        <img class="product__image" loading="lazy" src="build/img/poloMN.jpg" alt="Black Polo for Women">
+                    </picture>
+                    <div class="product__information">
+                        <p class="product__name">Polo Negro Mujer</p>
+                        <p class="product__price">S/27</p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html?id=8">
+                    <picture>
+                        <source class="product__image" srcset="build/img/poloMB.avif" type="image/avif">
+                        <source class="product__image" srcset="build/img/poloMB.webp" type="image/webp">
+                        <img class="product__image" loading="lazy" src="build/img/poloMB.jpg" alt="Beige Polo for Women">
+                    </picture>
+                    <div class="product__information">
+                        <p class="product__name">Polo Beige Mujer</p>
+                        <p class="product__price">S/27</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="graph tshirt--graph">
+                <input class="button" type="submit" value="Ver Más" onclick="redirectToProductos()">
+            </div> 
+        </div>
+        
+        <section class="contacto">
+            <h2>Contactanos</h2>
+
+            <form class="form">
+                <fieldset>
+                    <legend>
+                        para obtener más informacion complete los campos
+                    </legend>
+                    <div class="fields-container">
+                        <div class="field mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input class="form-control" type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="field mb-3">
+                            <label class="form-label">Teléfono</label>
+                            <input class="form-control" type="tel" placeholder="teléfono" required>
+                        </div>
+                        <div class="field mb-3">
+                            <label class="form-label">Email</label>
+                            <input class="form-control" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="field">
+                            <label class="form-label">Mensaje</label>
+                            <textarea class="form-control" rows="8"></textarea>
+                        </div>
+                    </div>
+                
+                    <div class="form__button--alignRight">
+                        <input class="btn" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+            
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p class="footer__text">ATENAS - Todos los derechos reservador &copy; 2023 Tienda de Ropa</p>
+    </footer>
+</body>
+</html>
